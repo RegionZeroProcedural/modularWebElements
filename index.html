@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive UI Showcase | Keegan LaBrot</title>
+  <meta
+    name="description"
+    content="A reusable interactive portfolio template showcasing glass UI, tilt cards, reactive backgrounds, video layers, and dynamic content sections."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <!-- Optional background video.
+       Add these files later:
+       /video/background-preview.mp4
+       /video/background-hq.mp4
+  -->
+  <video
+    id="bgVideo"
+    class="site-video-bg"
+    src="video/background-preview.mp4"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    aria-hidden="true"
+  ></video>
+
+  <div class="ambient-bg" aria-hidden="true"></div>
+  <div class="site-bg-overlay" aria-hidden="true"></div>
+
+  <header class="site-header liquid-glass" data-glass>
+    <a class="brand liquid-button" href="#home" aria-label="Go to home" data-glass>
+      <span class="brand-mark">K</span>
+      <span class="brand-text">Keegan's Web Lab</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a class="liquid-button" data-glass href="#systems">Systems</a>
+      <a class="liquid-button" data-glass href="#work">Work</a>
+      <a class="liquid-button" data-glass href="#feed">Feed</a>
+      <a class="liquid-button" data-glass href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-toggle liquid-button" data-glass type="button" aria-label="Open menu">
+      ☰
+    </button>
+  </header>
+
+  <nav class="mobile-nav liquid-glass" data-glass aria-label="Mobile navigation">
+    <a class="liquid-button" data-glass href="#systems">Systems</a>
+    <a class="liquid-button" data-glass href="#work">Work</a>
+    <a class="liquid-button" data-glass href="#feed">Feed</a>
+    <a class="liquid-button" data-glass href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Interactive frontend systems</p>
+        <h1>Reusable web UI with a cinematic glass style.</h1>
+        <p class="hero-text">
+          This page is built to show my level of polish: glass components, mouse-reactive highlights,
+          animated cards, responsive navigation, dynamic feeds, and clean reusable code.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary-btn liquid-button" data-glass href="#work">View showcase</a>
+          <a class="btn secondary-btn liquid-button" data-glass href="#systems">Explore systems</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel liquid-glass reveal" data-glass aria-label="UI feature preview">
+        <div class="hero-orb" aria-hidden="true"></div>
+        <h2>Signature Stack</h2>
+        <p>Glass UI, responsive layout, motion systems, dynamic content, and trustworthy polish.</p>
+
+        <div class="stat-grid">
+          <div>
+            <strong>3D</strong>
+            <span>Tilt Cards</span>
+          </div>
+          <div>
+            <strong>HQ</strong>
+            <span>Video Swap</span>
+          </div>
+          <div>
+            <strong>JSON</strong>
+            <span>Feeds</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="systems" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Reusable components</p>
+        <h2>UI systems that feel custom, not templated.</h2>
+      </div>
+
+      <div class="systems-grid">
+        <article class="skill-card liquid-glass reveal" data-glass data-tilt>
+          <span>Glass Cards</span>
+          <p>Reusable frosted panels with layered borders and mouse-position highlights.</p>
+        </article>
+
+        <article class="skill-card liquid-glass reveal" data-glass data-tilt>
+          <span>Motion Nav</span>
+          <p>Accessible mobile navigation with state cleanup on resize and link clicks.</p>
+        </article>
+
+        <article class="skill-card liquid-glass reveal" data-glass data-tilt>
+          <span>Dynamic Feeds</span>
+          <p>Drop in JSON-powered TikTok, updates, forum threads, or project previews.</p>
+        </article>
+
+        <article class="skill-card liquid-glass reveal" data-glass data-tilt>
+          <span>Ambient Depth</span>
+          <p>Scroll-reactive background movement that gives the whole page subtle life.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Portfolio proof</p>
+        <h2>Showcase cards for my strongest builds.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card liquid-glass reveal" data-glass data-tilt>
+          <div class="project-media project-media-one"><img src="images/RegionZero-Site.png" alt="Region Zero website preview"></div>
+          <div class="project-body">
+            <p class="project-kicker">Game website</p>
+            <h3>Region Zero</h3>
+            <p>
+              A dark sci-fi community site with dynamic development feeds, forum previews,
+              and a strong identity built around glowing interactive elements.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>JSON</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card liquid-glass reveal" data-glass data-tilt>
+          <div class="project-media project-media-two"><img src="images/GlassUI.png" alt="Glass UI preview"></div>
+          <div class="project-body">
+            <p class="project-kicker">Visual frontend</p>
+            <h3>Glass Portfolio</h3>
+            <p>
+              A high-end personal portfolio concept using transparent panels,
+              hover lighting, 3D cards, video backgrounds, and cinematic layout.
+            </p>
+            <div class="project-tags">
+              <span>Glass UI</span>
+              <span>Responsive</span>
+              <span>Motion</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card liquid-glass reveal" data-glass data-tilt>
+          <div class="project-media project-media-three"><img src="imageS/UIpackage.png" alt="UI package preview"></div>
+          <div class="project-body">
+            <p class="project-kicker">Client-ready kit</p>
+            <h3>Reusable UI Package</h3>
+            <p>
+              A starter kit you can reuse for local businesses, creator sites,
+              dev portfolios, landing pages, and premium web redesign pitches.
+            </p>
+            <div class="project-tags">
+              <span>Components</span>
+              <span>Clean Code</span>
+              <span>Reusable</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="feed" class="section split-section">
+      <div class="feed-card liquid-glass reveal" data-glass>
+        <div class="section-heading compact">
+          <p class="eyebrow">Dynamic social proof</p>
+          <h2>TikTok dev feed</h2>
+          <p>Add video IDs in <code>videos.json</code> and the page builds the embeds automatically.</p>
+        </div>
+
+        <div id="tiktok-grid" class="tiktok-grid" aria-live="polite">
+          <div class="empty-state">Add TikTok IDs to <code>videos.json</code> to populate this section.</div>
+        </div>
+      </div>
+
+      <div class="feed-card liquid-glass reveal" data-glass>
+        <div class="section-heading compact">
+          <p class="eyebrow">Community layer</p>
+          <h2>Latest threads</h2>
+          <p>Drop in forum JSON and this section becomes a live activity preview.</p>
+        </div>
+
+        <div id="latestThreads" class="thread-list" aria-live="polite">
+          <div class="thread">
+            <h3>Forum preview ready</h3>
+            <p>Add <code>Forums/forumData.json</code> to load real community activity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card liquid-glass reveal" data-glass>
+        <p class="eyebrow">Let’s build something polished</p>
+        <h2>Clean frontend with a custom visual identity.</h2>
+        <p>
+          This layout is built to impress clients, bootcamp mentors, employers, and followers
+          by showing both creativity and practical reusable code.
+        </p>
+
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" placeholder="Tell me what you want to build"></textarea>
+          </label>
+
+          <button class="btn primary-btn liquid-button" data-glass type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer liquid-glass" data-glass>
+    <p>Reusable interactive frontend system • Built for portfolio, client, and creator websites.</p>
+  </footer>
+</body>
+</html>

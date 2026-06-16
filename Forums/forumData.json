@@ -1,0 +1,20 @@
+{
+  "categories": {
+    "updates": {
+      "threads": [
+        {
+          "title": "Patch Notes v0.0.2",
+          "preview": "A short post preview pulled dynamically from forumData.json."
+        },
+        {
+          "title": "Early Beta Testing",
+          "preview": "A placeholder thread for future testing announcements."
+        },
+        {
+          "title": "Weapon System Showcase",
+          "preview": "A preview slot for your most recent dev discussion."
+        }
+      ]
+    }
+  }
+}
